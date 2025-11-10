@@ -26,7 +26,7 @@ editor: source
 
 :::{.fragment .fade-in}
 
-![[bit.ly/acns_apthorp](https://bit.ly/acns_apthorp)](images/QRcode.png){fig-align="center"}
+![[bit.ly/Apthorp_ACNS](https://bit.ly/Apthorp_ACNS)](images/QRcode.png){fig-align="center"}
 
 :::
 
