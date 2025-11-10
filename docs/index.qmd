@@ -5,7 +5,7 @@ title-slide-attributes:
   data-background-image: images/rainbow.png
   data-background-size: fill
   data-background-opacity: "0.5"
-author: "Deborah Apthorp, Aishah Mohammed, & Robin Vlieger"
+author: "Deborah Apthorp, Aishah Mohammed, Alycia Messing & Robin Vlieger"
 institute: "University of New England, NSW, & Australian National University"
 format: 
   revealjs: 
@@ -32,13 +32,24 @@ editor: source
 
 ::: notes
 
-Remember to make new QR code and shortlink
+
 
 :::
 
 
 ## Background - Parkinson's Disease
 
+- Prevalence - approx. 150,000 in Australia
+- Increasing by 4% p/a
+- 40% live outside capital cities ([Parkinson's Australia](https://www.parkinsons.org.au/))
+- Diagnosis: Still difficult - current standard UPDRS-III
+- Variable disease progression
+- Symptoms: motor & non-motor
+- Non-motor: autonomic dysfunction, neuropsychiatric (mood, cognition, behaviour, thought), sensory & sleep 
+- Early warning signs: Loss of smell, sleep disturbances, micrographia, facial & speech changes
+- Early diagnosis - sway, finger tapping, EEG
+
+## Our study
 
 
 ## EEG - Aperiodic and periodic components
