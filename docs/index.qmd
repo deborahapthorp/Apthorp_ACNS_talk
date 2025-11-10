@@ -1,0 +1,47 @@
+---
+title: "Aperiodic components of EEG in Parkinson's disease"
+subtitle: ""
+title-slide-attributes:
+  data-background-image: images/rainbow.png
+  data-background-size: fill
+  data-background-opacity: "0.5"
+author: "Deborah Apthorp, Aishah Mohammed, & Robin Vlieger"
+institute: "University of New England, NSW, & Australian National University"
+format: 
+  revealjs: 
+    theme: sky
+    width: 1600
+    height: 900
+    incremental: true
+    preview-links: auto
+    slide-number: true
+    logo: images/UNE_logo.png
+    css: logo.css
+editor: source
+---
+
+## Talk information
+
+- This talk was written in [Quarto](https://quarto.org/) (R Markdown/R Studio) & is available online
+
+:::{.fragment .fade-in}
+
+![[bit.ly/acns_apthorp](https://bit.ly/acns_apthorp)](images/QRcode.png){fig-align="center"}
+
+:::
+
+::: notes
+
+Remember to make new QR code and shortlink
+
+:::
+
+
+## Background - Parkinson's Disease
+
+
+
+## EEG - Aperiodic and periodic components
+
+
+
