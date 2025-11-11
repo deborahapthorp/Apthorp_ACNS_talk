@@ -48,31 +48,26 @@ editor: source
 
 ## Our study
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
-
 -   New England region cohort - data collected at 3 time points in Hunter/New England/Tamworth region (2022-2023 - T1 data used here)
 
 -   Canberra cohort - data collected at The Canberra Hospital (2016-2017)
 
 -   EEG (resting state, Go-NoGo), postural sway, finger tapping, MoCA, NUCOG, MDS-UPDRS-III, mood (depression, anxiety), demographics
-
 :::
 
 ::: {.column width="50%"}
-
-![](images/Setup.png){.fragment .fade-in}
-
+![](images/setup.png){.fragment .fade-in}
 :::
-:::
+:::::
 
 ::: notes
-
 :::
 
 ## EEG - Aperiodic and periodic components
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   Traditionally, EEG frequency data has been analysed in bands (delta, alpha, beta, gamma)
 
@@ -82,19 +77,13 @@ editor: source
 :::
 
 ::: {.column width="50%"}
-
 ![](images/FOOOF_fit.png){.fragment .fade-in}
-
 :::
-:::
+:::::
 
 ::: notes
-
 :::
 
-
-## Results - Hunter New England cohort 
+## Results - Hunter New England cohort
 
 ![](images/moca_exponent.png)
-
-
