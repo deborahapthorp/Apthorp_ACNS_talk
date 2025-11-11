@@ -88,5 +88,15 @@ editor: source
 :::
 
 ## Results - Hunter New England cohort
+::::: columns
+::: {.column width="35%"}
+![](images/exponent_t-test.png){.fragment .fade-in}
+![](images/offset_t-test.png){.fragment .fade-in}
+:::
 
-![](images/moca_exponent.png)
+::: {.column width="65%"}
+![](images/moca_exponent.png){.fragment .fade-in}
+
+:::
+
+:::
