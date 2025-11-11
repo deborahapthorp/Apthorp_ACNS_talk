@@ -92,11 +92,9 @@ editor: source
 
 :::
 
-<<<<<<< HEAD
+
 ## Results - Hunter New England cohort 
 
 
-=======
-## Results
->>>>>>> bfe49a5de6dba6d815de7da7a1d858fc5588430c
+
 
