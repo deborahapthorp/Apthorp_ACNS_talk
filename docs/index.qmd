@@ -61,7 +61,7 @@ editor: source
 
 ::: {.column width="50%"}
 
-![](images/Setup.png){.fragment .fade-in}
+![](images/setup.png){.fragment .fade-in}
 
 :::
 :::
