@@ -95,6 +95,6 @@ editor: source
 
 ## Results - Hunter New England cohort 
 
-
+![](images/moca_exponent.png)
 
 
