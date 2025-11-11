@@ -48,7 +48,7 @@ editor: source
 
 ## Our study
 
-::::: columns
+::: columns
 ::: {.column width="50%"}
 -   New England region cohort - data collected at 3 time points in Hunter/New England/Tamworth region (2022-2023 - T1 data used here)
 
@@ -58,9 +58,12 @@ editor: source
 :::
 
 ::: {.column width="50%"}
+
 ![](images/setup.png){.fragment .fade-in}
+
 :::
-:::::
+:::
+
 
 ::: notes
 :::
