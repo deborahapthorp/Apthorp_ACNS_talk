@@ -48,7 +48,7 @@ editor: source
 
 ## Our study
 
-::::: columns
+::: columns
 ::: {.column width="50%"}
 -   New England region cohort - data collected at 3 time points in Hunter/New England/Tamworth region (2022-2023 - T1 data used here)
 
@@ -60,14 +60,14 @@ editor: source
 ::: {.column width="50%"}
 ![](images/setup.png){.fragment .fade-in}
 :::
-:::::
+:::
 
 ::: notes
 :::
 
 ## EEG - Aperiodic and periodic components
 
-::::: columns
+::: columns
 ::: {.column width="50%"}
 -   Traditionally, EEG frequency data has been analysed in bands (delta, alpha, beta, gamma)
 
@@ -79,12 +79,15 @@ editor: source
 ::: {.column width="50%"}
 ![](images/FOOOF_fit.png){.fragment .fade-in}
 :::
-:::::
+:::
 
 ::: notes
 :::
 
 ## EEG - Hunter New England cohort
+
+::: columns
+::: {.column width="70%"}
 
 -   For this study, we looked at resting state data (90s each with eyes open and closed)
 
@@ -96,13 +99,22 @@ editor: source
 
 -   FOOOF Toolbox (Fitting One Over F) - Python (Jupyter Lab) to extract aperiodic components (slope & offset)
 
+:::
+
+:::{.column width="30%".fragment .fade-in}
+
+![Alycia Messing](images/Alycia.jpg)
+
+:::
+:::
+
 ::: notes
 Image for this slide?
 :::
 
 ## Results - Hunter New England cohort
 
-::::: columns
+::: columns
 ::: {.column width="35%"}
 ![](images/exponent_t-test.png){.fragment .fade-in} ![](images/offset_t-test.png){.fragment .fade-in}
 :::
@@ -110,11 +122,11 @@ Image for this slide?
 ::: {.column width="65%"}
 ![](images/moca_exponent.png){.fragment .fade-in}
 :::
-:::::
+:::
 
 ## Results - HNE (patients vs. controls, EC)
 
-::::: columns
+::: columns
 ::: {.column .fragment .fade-in width="50%"}
 |                   | F (df)       | p    | $\eta^2_P$ |
 |-------------------|--------------|------|------------|
@@ -134,7 +146,7 @@ Image for this slide?
 
 : Results - EC offset
 :::
-:::::
+:::
 
 ## Results - HNE (MoCA and aperiodic components, patients)
 
@@ -148,3 +160,38 @@ Image for this slide?
 : EC offset & exponent
 
 # But does it replicate? 
+
+
+## The Canberra Hospital cohort
+
+::: columns
+::: {.column width="70%"}
+
+- Data collected 2016-2017 
+- 90s each with eyes open and eyes closed
+- BioSemi Active Two system - 64 electrodes 
+- 21 patients, 18 controls
+- Selected only matching channels to the HNE cohort, downsampled to 300Hz to match 
+- Same preprocessing pipeline 
+- Thanks to Robin Vlieger for this work 
+
+:::
+
+:::{.column width="30%"}
+
+![](images/RobinVlieger.jpg){.fragment .fade-in}
+
+:::
+:::
+
+## Results - Canberra cohort
+
+::: columns
+::: {.column width="35%"}
+![](images/TCH_exponent_t-test.png){.fragment .fade-in} ![](images/TCH_offset_t-test.png){.fragment .fade-in}
+:::
+
+::: {.column width="65%"}
+![](images/TCH_moca_offset.png){.fragment .fade-in}
+:::
+:::
