@@ -48,7 +48,7 @@ editor: source
 
 ## Our study
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   New England region cohort - data collected at 3 time points in Hunter/New England/Tamworth region (2022-2023 - T1 data used here)
 
@@ -60,14 +60,14 @@ editor: source
 ::: {.column width="50%"}
 ![](images/setup.png){.fragment .fade-in}
 :::
-:::
+:::::
 
 ::: notes
 :::
 
 ## EEG - Aperiodic and periodic components
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   Traditionally, EEG frequency data has been analysed in bands (delta, alpha, beta, gamma)
 
@@ -79,16 +79,15 @@ editor: source
 ::: {.column width="50%"}
 ![](images/FOOOF_fit.png){.fragment .fade-in}
 :::
-:::
+:::::
 
 ::: notes
 :::
 
 ## EEG - Hunter New England cohort
 
-::: columns
+::::: columns
 ::: {.column width="70%"}
-
 -   For this study, we looked at resting state data (90s each with eyes open and closed)
 
 -   EEG headset: Wearable Sensing DSI-24 - dry-electrode headset, 21 channels
@@ -98,15 +97,12 @@ editor: source
 -   Frequencies extracted in MATLAB/EEGlab
 
 -   FOOOF Toolbox (Fitting One Over F) - Python (Jupyter Lab) to extract aperiodic components (slope & offset)
-
 :::
 
-:::{.column width="30%".fragment .fade-in}
-
+::: {.column .fragment .fade-in width="30%"}
 ![Alycia Messing](images/Alycia.jpg)
-
 :::
-:::
+:::::
 
 ::: notes
 Image for this slide?
@@ -114,7 +110,7 @@ Image for this slide?
 
 ## Results - Hunter New England cohort
 
-::: columns
+::::: columns
 ::: {.column width="35%"}
 ![](images/exponent_t-test.png){.fragment .fade-in} ![](images/offset_t-test.png){.fragment .fade-in}
 :::
@@ -122,16 +118,16 @@ Image for this slide?
 ::: {.column width="65%"}
 ![](images/moca_exponent.png){.fragment .fade-in}
 :::
-:::
+:::::
 
 ## Results - HNE (patients vs. controls, EC)
 
-::: columns
+::::: columns
 ::: {.column .fragment .fade-in width="50%"}
 |                   | F (df)       | p    | $\eta^2_P$ |
 |-------------------|--------------|------|------------|
 | Model             | 4.45 (2,37)  | .018 | 0.19       |
-| Group (PD vs CTR) | 6.17 (1,37)  | .018 | 0.14       |
+| **Group**  | 6.17 (1,37)  | **.018 **| 0.14       |
 | Age               | 0.22 (1, 37) | .645 | 0.01       |
 
 : Results - EC exponent
@@ -140,53 +136,48 @@ Image for this slide?
 ::: {.column .fragment .fade-in width="50%"}
 |                   | F (df)       | p    | $\eta^2_P$ |
 |-------------------|--------------|------|------------|
-|                   | 2.33 (2,37)  | .111 | 0.11       |
-| Group (PD vs CTR) | 2.62 (1,37)  | .114 | 0.07       |
+| Model                  | 2.33 (2,37)  | .111 | 0.11       |
+| Group  | 2.62 (1,37)  | .114 | 0.07       |
 | Age               | 0.39 (1, 37) | .536 | 0.01       |
 
 : Results - EC offset
 :::
-:::
+:::::
 
 ## Results - HNE (MoCA and aperiodic components, patients)
 
 |          | F (df)       | p    | $\eta^2_P$ |
 |----------|--------------|------|------------|
 | Model    | 5.62 (3,16)  | .008 | 0.52       |
-| Exponent | 10.72 (1,16) | .005 | 0.40       |
+| **Exponent** | 10.72 (1,16) | **.005** | 0.40       |
 | Offset   | 1.90 (1,16)  | .187 | .11        |
-| Age      | 7.46 (1,16)  | .015 | .32        |
+| **Age**      | 7.46 (1,16)  | **.015** | .32        |
 
 : EC offset & exponent
 
-# But does it replicate? 
-
+# But does it replicate?
 
 ## The Canberra Hospital cohort
 
-::: columns
+::::: columns
 ::: {.column width="70%"}
-
-- Data collected 2016-2017 
-- 90s each with eyes open and eyes closed
-- BioSemi Active Two system - 64 electrodes 
-- 21 patients, 18 controls
-- Selected only matching channels to the HNE cohort, downsampled to 300Hz to match 
-- Same preprocessing pipeline 
-- Thanks to Robin Vlieger for this work 
-
+-   Data collected 2016-2017
+-   90s each with eyes open and eyes closed
+-   BioSemi Active Two system - 64 electrodes
+-   21 patients, 18 controls
+-   Selected only matching channels to the HNE cohort, downsampled to 300Hz to match
+-   Same preprocessing pipeline
+-   Thanks to Robin Vlieger for this work
 :::
 
-:::{.column width="30%"}
-
+::: {.column width="30%"}
 ![](images/RobinVlieger.jpg){.fragment .fade-in}
-
 :::
-:::
+:::::
 
 ## Results - Canberra cohort
 
-::: columns
+::::: columns
 ::: {.column width="35%"}
 ![](images/TCH_exponent_t-test.png){.fragment .fade-in} ![](images/TCH_offset_t-test.png){.fragment .fade-in}
 :::
@@ -194,4 +185,53 @@ Image for this slide?
 ::: {.column width="65%"}
 ![](images/TCH_moca_offset.png){.fragment .fade-in}
 :::
+:::::
+
+## Results - Canberra cohort (patients vs. controls, EC)
+
+::::: columns
+::: {.column .fragment .fade-in width="48%"}
+|                   | F (df)       | p    | $\eta^2_P$ |
+|-------------------|--------------|------|------------|
+| Model             | 6.14 (2,35)  | .005 | 0.26       |
+|**Group** | 11.96 (1,35) |**.001** | 0.25       |
+| Age               | 0.29 (1, 35) | .591 | 0.01       |
+
+: Results - EC exponent (TCH cohort)
+:::
+
+::: {.column .fragment .fade-in width="48%"}
+|                   | F (df)        | p    | $\eta^2_P$ |
+|-------------------|---------------|------|------------|
+| Model                 | 5.40 (2,37)   | .009 | 0.24       |
+| **Group**  | 8.31 (1,35)   | **.007** | 0.19       |
+| Age               | 0.129 (1, 35) | .129 | 0.06       |
+
+: Results - EC offset (TCH cohort)
+:::
+:::
+
+
+## Results - TCH (MoCA and aperiodic components, patients)
+
+::: columns
+::: {.column .fragment .fade-in width="50%"}
+
+|          | F (df)       | p    | $\eta^2_P$ |
+|----------|--------------|------|------------|
+| Model    | 6.73 (3,17)  | .003 | 0.54       |
+| Exponent | 1.42 (1,17) | .249 | 0.08       |
+| Offset   | 3.58 (1,17)  | .076 | .17        |
+| **Age**      | 8.97 (1,16)  | **.008** | .35        |
+
+: EC offset & exponent
+
+:::
+
+:::{.column .fragment .fade-in width="50%"}
+
+![](images/TCH_age_MOCA.png)
+
+:::
+
 :::
