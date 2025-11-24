@@ -248,6 +248,29 @@ Deborah Apthorp, Aishah Mohammed, Alycia Messing &amp; Robin Vlieger
           display:block!important;
       }</style></aside>
 </section>
+<section id="eeg---hunter-new-england-cohort" class="slide level2">
+<h2>EEG - Hunter New England cohort</h2>
+<ul>
+<li class="fragment"><p>For this study, we looked at resting state data (90s each with eyes open and closed)</p></li>
+<li class="fragment"><p>EEG headset: Wearable Sensing DSI-24 - dry-electrode headset, 21 channels</p></li>
+<li class="fragment"><p>Preprocessing pipeline: HAPPE toolbox for low-density arrays</p></li>
+<li class="fragment"><p>Frequencies extracted in MATLAB/EEGlab</p></li>
+<li class="fragment"><p>FOOOF Toolbox (Fitting One Over F) - Python (Jupyter Lab) to extract aperiodic components (slope &amp; offset)</p></li>
+</ul>
+<aside class="notes">
+<p>Image for this slide?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="results---hunter-new-england-cohort" class="slide level2">
 <h2>Results - Hunter New England cohort</h2>
 <div class="columns">
@@ -256,6 +279,118 @@ Deborah Apthorp, Aishah Mohammed, Alycia Messing &amp; Robin Vlieger
 </div><div class="column" style="width:65%;">
 <p><img data-src="images/moca_exponent.png" class="fragment fade-in"></p>
 </div></div>
+</section>
+<section id="results---hne-patients-vs.-controls-ec" class="slide level2">
+<h2>Results - HNE (patients vs.&nbsp;controls, EC)</h2>
+<div class="columns">
+<div class="column fragment fade-in" style="width:50%;">
+<table class="caption-top">
+<caption>Results - EC exponent</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th>F (df)</th>
+<th>p</th>
+<th><span class="math inline">\(\eta^2_P\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Model</td>
+<td>4.45 (2,37)</td>
+<td>.018</td>
+<td>0.19</td>
+</tr>
+<tr class="even">
+<td>Group (PD vs CTR)</td>
+<td>6.17 (1,37)</td>
+<td>.018</td>
+<td>0.14</td>
+</tr>
+<tr class="odd">
+<td>Age</td>
+<td>0.22 (1, 37)</td>
+<td>.645</td>
+<td>0.01</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column fragment fade-in" style="width:50%;">
+<table class="caption-top">
+<caption>Results - EC offset</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th>F (df)</th>
+<th>p</th>
+<th><span class="math inline">\(\eta^2_P\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>2.33 (2,37)</td>
+<td>.111</td>
+<td>0.11</td>
+</tr>
+<tr class="even">
+<td>Group (PD vs CTR)</td>
+<td>2.62 (1,37)</td>
+<td>.114</td>
+<td>0.07</td>
+</tr>
+<tr class="odd">
+<td>Age</td>
+<td>0.39 (1, 37)</td>
+<td>.536</td>
+<td>0.01</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</section>
+<section id="results---hne-moca-and-aperiodic-components-patients" class="slide level2">
+<h2>Results - HNE (MoCA and aperiodic components, patients)</h2>
+<table class="caption-top">
+<caption>EC offset &amp; exponent</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th>F (df)</th>
+<th>p</th>
+<th><span class="math inline">\(\eta^2_P\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Model</td>
+<td>5.62 (3,16)</td>
+<td>.008</td>
+<td>0.52</td>
+</tr>
+<tr class="even">
+<td>Exponent</td>
+<td>10.72 (1,16)</td>
+<td>.005</td>
+<td>0.40</td>
+</tr>
+<tr class="odd">
+<td>Offset</td>
+<td>1.90 (1,16)</td>
+<td>.187</td>
+<td>.11</td>
+</tr>
+<tr class="even">
+<td>Age</td>
+<td>7.46 (1,16)</td>
+<td>.015</td>
+<td>.32</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="but-does-it-replicate" class="title-slide slide level1 center">
+<h1>But does it replicate?</h1>
 
 </section>
     </div>

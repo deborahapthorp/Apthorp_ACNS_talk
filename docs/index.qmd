@@ -48,7 +48,7 @@ editor: source
 
 ## Our study
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   New England region cohort - data collected at 3 time points in Hunter/New England/Tamworth region (2022-2023 - T1 data used here)
 
@@ -58,12 +58,9 @@ editor: source
 :::
 
 ::: {.column width="50%"}
-
 ![](images/setup.png){.fragment .fade-in}
-
 :::
-:::
-
+:::::
 
 ::: notes
 :::
@@ -87,16 +84,67 @@ editor: source
 ::: notes
 :::
 
+## EEG - Hunter New England cohort
+
+-   For this study, we looked at resting state data (90s each with eyes open and closed)
+
+-   EEG headset: Wearable Sensing DSI-24 - dry-electrode headset, 21 channels
+
+-   Preprocessing pipeline: HAPPE toolbox for low-density arrays
+
+-   Frequencies extracted in MATLAB/EEGlab
+
+-   FOOOF Toolbox (Fitting One Over F) - Python (Jupyter Lab) to extract aperiodic components (slope & offset)
+
+::: notes
+Image for this slide?
+:::
+
 ## Results - Hunter New England cohort
+
 ::::: columns
 ::: {.column width="35%"}
-![](images/exponent_t-test.png){.fragment .fade-in}
-![](images/offset_t-test.png){.fragment .fade-in}
+![](images/exponent_t-test.png){.fragment .fade-in} ![](images/offset_t-test.png){.fragment .fade-in}
 :::
 
 ::: {.column width="65%"}
 ![](images/moca_exponent.png){.fragment .fade-in}
+:::
+:::::
 
+## Results - HNE (patients vs. controls, EC)
+
+::::: columns
+::: {.column .fragment .fade-in width="50%"}
+|                   | F (df)       | p    | $\eta^2_P$ |
+|-------------------|--------------|------|------------|
+| Model             | 4.45 (2,37)  | .018 | 0.19       |
+| Group (PD vs CTR) | 6.17 (1,37)  | .018 | 0.14       |
+| Age               | 0.22 (1, 37) | .645 | 0.01       |
+
+: Results - EC exponent
 :::
 
+::: {.column .fragment .fade-in width="50%"}
+|                   | F (df)       | p    | $\eta^2_P$ |
+|-------------------|--------------|------|------------|
+|                   | 2.33 (2,37)  | .111 | 0.11       |
+| Group (PD vs CTR) | 2.62 (1,37)  | .114 | 0.07       |
+| Age               | 0.39 (1, 37) | .536 | 0.01       |
+
+: Results - EC offset
 :::
+:::::
+
+## Results - HNE (MoCA and aperiodic components, patients)
+
+|          | F (df)       | p    | $\eta^2_P$ |
+|----------|--------------|------|------------|
+| Model    | 5.62 (3,16)  | .008 | 0.52       |
+| Exponent | 10.72 (1,16) | .005 | 0.40       |
+| Offset   | 1.90 (1,16)  | .187 | .11        |
+| Age      | 7.46 (1,16)  | .015 | .32        |
+
+: EC offset & exponent
+
+# But does it replicate? 
