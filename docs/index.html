@@ -251,20 +251,18 @@ Deborah Apthorp, Aishah Mohammed, Alycia Messing &amp; Robin Vlieger
 <section id="eeg---hunter-new-england-cohort" class="slide level2">
 <h2>EEG - Hunter New England cohort</h2>
 <div class="columns">
-<div class="column" style="width:70%;">
+<div class="column" style="width:65%;">
 <ul>
 <li class="fragment"><p>For this study, we looked at resting state data (90s each with eyes open and closed)</p></li>
+<li class="fragment"><p>20 patients, 21 controls</p></li>
 <li class="fragment"><p>EEG headset: Wearable Sensing DSI-24 - dry-electrode headset, 21 channels</p></li>
 <li class="fragment"><p>Preprocessing pipeline: HAPPE toolbox for low-density arrays</p></li>
 <li class="fragment"><p>Frequencies extracted in MATLAB/EEGlab</p></li>
 <li class="fragment"><p>FOOOF Toolbox (Fitting One Over F) - Python (Jupyter Lab) to extract aperiodic components (slope &amp; offset)</p></li>
 </ul>
-</div><div class="column fragment fade-in" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/Alycia.jpg"></p>
-<figcaption>Alycia Messing</figcaption>
-</figure>
+</div><div class="column" style="width:35%;">
+<div class="r-stack">
+<p><img data-src="images/Alycia.jpg" class="fragment" width="350" height="400" alt="Alycia Messing"> <img data-src="images/Aishah.jpg" class="fragment" width="350" height="350" alt="Aishah Mohammed"></p>
 </div>
 </div></div>
 <aside class="notes">
@@ -427,7 +425,7 @@ Deborah Apthorp, Aishah Mohammed, Alycia Messing &amp; Robin Vlieger
 <div class="column" style="width:35%;">
 <p><img data-src="images/TCH_exponent_t-test.png" class="fragment fade-in"> <img data-src="images/TCH_offset_t-test.png" class="fragment fade-in"></p>
 </div><div class="column" style="width:65%;">
-<p><img data-src="images/TCH_moca_offset.png" class="fragment fade-in"></p>
+<p><img data-src="images/TCH_moca_exponent.png" class="fragment fade-in"></p>
 </div></div>
 </section>
 <section id="results---canberra-cohort-patients-vs.-controls-ec" class="slide level2">
@@ -543,8 +541,53 @@ Deborah Apthorp, Aishah Mohammed, Alycia Messing &amp; Robin Vlieger
 </div><div class="column fragment fade-in" style="width:50%;">
 <p><img data-src="images/TCH_age_MOCA.png"></p>
 </div></div>
-
+</section>
+<section id="unm-and-utu-cohorts" class="slide level2">
+<h2>UNM and UTU cohorts</h2>
+<ul>
+<li class="fragment">We also looked at two publicly available open datasets from the University of New Mexico and the University of Turku</li>
+<li class="fragment">UNM: The biggest dataset - 28 patients, 28 controls</li>
+<li class="fragment">A very widely used dataset in ML studies - has “on” and “off” medication states for patients</li>
+<li class="fragment">We used the “on” data to match our own datasets</li>
+<li class="fragment">Same electrode selection, downsampling, preprocessing as previous studies</li>
+<li class="fragment">UTU (University of Turku, Finland): 18 patients, 18 controls</li>
+<li class="fragment">As above re electrodes, preprocessing.</li>
+<li class="fragment">Both had MMSE rather than MoCA for cognitive functioning</li>
+</ul>
+</section>
+<section id="unm-results" class="slide level2">
+<h2>UNM results</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p><img data-src="images/UNM_exponent_t-test.png" class="fragment fade-in"> <img data-src="images/UNM_offset_t-test.png" class="fragment fade-in"></p>
+</div><div class="column" style="width:65%;">
+<p><img data-src="images/UNM_MMSE_exponent.png" class="fragment fade-in"></p>
+</div></div>
+</section>
+<section id="utu-results" class="slide level2">
+<h2>UTU results</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p><img data-src="images/UTU_exponent_t-test.png" class="fragment fade-in"> <img data-src="images/UTU_offset_t-test.png" class="fragment fade-in"></p>
+</div><div class="column" style="width:65%;">
+<p><img data-src="images/UTU_MMSE_exponent.png" class="fragment fade-in"></p>
+</div></div>
+</section>
+<section id="discussion" class="slide level2">
+<h2>Discussion</h2>
+<ul>
+<li class="fragment">Patients were higher than controls for <strong>exponent</strong> in 3/4 datasets (UNE, TCH, UTU)</li>
+<li class="fragment">Patients were higher than controls for <strong>offset</strong> only in 1 dataset (TCH)</li>
+<li class="fragment">Correlations with cognitive measures were inconsistent and mostly non-significant</li>
+<li class="fragment">More collaboration between EEG labs is needed - this data is time-consuming to collect and patients want to know their time is spent usefully</li>
+<li class="fragment">What do aperiodic component differences tell us? Noise? General slowing?</li>
+<li class="fragment">Comments and questions welcome!</li>
+</ul>
 </section></section>
+<section id="questions" class="title-slide slide level1 center" data-background-color="black" data-background-image="images/dogs.png">
+<h1>Questions?</h1>
+
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="images/UNE_logo.png" class="slide-logo"></p>
