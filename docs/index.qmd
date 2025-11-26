@@ -277,7 +277,7 @@ Image for this slide?
 :::
 ## Discussion
 
-<<<<<<< HEAD
+
 - Patients were higher than controls for **exponent** in 3/4 datasets (UNE, TCH, UTU)
 - Patients were higher than controls for **offset** only in 1 dataset (TCH)
 - Correlations with cognitive measures were inconsistent and mostly non-significant
@@ -286,6 +286,4 @@ Image for this slide?
 - Comments and questions welcome! 
 
 # Questions?{background-color="black" background-image="images/dogs.png"}
-=======
-# Questions? 
->>>>>>> 789e65f4151ea54a191b06235b565407e3bdf237
+
