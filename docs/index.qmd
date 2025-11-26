@@ -297,9 +297,11 @@ Image for this slide?
 ::: columns
 ::: {.column width="37%"}
 
+::: {.r-stack}
+
 ![](images/All_exponent_t-test.png){.fragment .fade-in}
 ![](images/All_offset_t-test.png){.fragment .fade-in}
-
+:::
 :::
 
 ::: {.column width="63%" .fragment .fade-in}
