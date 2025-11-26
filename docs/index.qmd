@@ -87,8 +87,10 @@ editor: source
 ## EEG - Hunter New England cohort
 
 ::::: columns
-::: {.column width="70%"}
+::: {.column width="65%"}
 -   For this study, we looked at resting state data (90s each with eyes open and closed)
+
+- 20 patients, 21 controls
 
 -   EEG headset: Wearable Sensing DSI-24 - dry-electrode headset, 21 channels
 
@@ -99,8 +101,11 @@ editor: source
 -   FOOOF Toolbox (Fitting One Over F) - Python (Jupyter Lab) to extract aperiodic components (slope & offset)
 :::
 
-::: {.column .fragment .fade-in width="30%"}
-![Alycia Messing](images/Alycia.jpg)
+::: {.column width="35%"}
+::: {.r-stack}
+![Alycia Messing](images/Alycia.jpg){.fragment width="350" height="400"}
+![Aishah Mohammed](images/Aishah.jpg){.fragment width="350" height="350"}
+:::
 :::
 :::::
 
@@ -173,17 +178,17 @@ Image for this slide?
 ::: {.column width="30%"}
 ![](images/RobinVlieger.jpg){.fragment .fade-in}
 :::
-:::::
+:::
 
 ## Results - Canberra cohort
 
-::::: columns
+::: columns
 ::: {.column width="35%"}
 ![](images/TCH_exponent_t-test.png){.fragment .fade-in} ![](images/TCH_offset_t-test.png){.fragment .fade-in}
 :::
 
 ::: {.column width="65%"}
-![](images/TCH_moca_offset.png){.fragment .fade-in}
+![](images/TCH_moca_exponent.png){.fragment .fade-in}
 :::
 :::::
 
@@ -235,3 +240,41 @@ Image for this slide?
 :::
 
 :::
+
+
+## UNM and UTU cohorts 
+
+- We also looked at two publicly available open datasets from the University of New Mexico and the University of Turku 
+- UNM: The biggest dataset - 28 patients, 28 controls 
+- A very widely used dataset in ML studies - has "on" and "off" medication states for patients 
+- We used the "on" data to match our own datasets
+- Same electrode selection, downsampling, preprocessing as previous studies 
+- UTU (University of Turku, Finland): 18 patients, 18 controls
+- As above re electrodes, preprocessing. 
+- Both had MMSE rather than MoCA for cognitive functioning 
+
+## UNM results
+::: columns
+::: {.column width="35%"}
+![](images/UNM_exponent_t-test.png){.fragment .fade-in} ![](images/UNM_offset_t-test.png){.fragment .fade-in}
+:::
+
+::: {.column width="65%"}
+![](images/UNM_MMSE_exponent.png){.fragment .fade-in}
+:::
+:::
+
+
+## UTU results 
+::: columns
+::: {.column width="35%"}
+![](images/UTU_exponent_t-test.png){.fragment .fade-in} ![](images/UTU_offset_t-test.png){.fragment .fade-in}
+:::
+
+::: {.column width="65%"}
+![](images/UTU_MMSE_exponent.png){.fragment .fade-in}
+:::
+:::
+## Discussion
+
+# Questions? 
