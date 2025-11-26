@@ -275,11 +275,63 @@ Image for this slide?
 ![](images/UTU_MMSE_exponent.png){.fragment .fade-in}
 :::
 :::
+
+## Combining datasets
+
+::: columns
+::: {.column width="50%"}
+![](images/All_exponents_by_cohort.png){.fragment .fade-in} ![](images/All_offsets_by_cohort.png){.fragment .fade-in}
+:::
+
+::: {.column width="50%"}
+
+- Both offset and exponent are higher in patients in all datasets 
+- Offsets are significantly lower in the UNM cohort
+- Why? Humidity? 
+- To compare across datasets, we z-scored the aperiodic components
+- Total sample: 88 patiens, 85 controls
+:::
+:::
+
+## Combining datasets - results
+::: columns
+::: {.column width="37%"}
+
+![](images/All_exponent_t-test.png){.fragment .fade-in}
+![](images/All_offset_t-test.png){.fragment .fade-in}
+
+:::
+
+::: {.column width="63%" .fragment .fade-in}
+
+|                   | F (df)       | p    | $\eta^2_P$ |
+|-------------------|--------------|------|------------|
+| Model             | 7.70 (2,167)  | <.001 | 0.08       |
+|**Group** | 14.66 (1,167) |**<.001** | 0.08       |
+| Age               | 2.04 (1, 167) | .156 | 0.01       |
+
+: Results - EC exponent (all cohorts)
+
+
+|                   | F (df)       | p    | $\eta^2_P$ |
+|-------------------|--------------|------|------------|
+| Model             | 4,76 (2,167)  | .01 | 0.05       |
+|**Group** | 9.35 (1,167) |**.003** | 0.05       |
+| Age               | 0.73 (1, 167) | .383 | 0.00       |
+
+: Results - EC offset (all cohorts)
+
+:::
+
+:::
+
+
 ## Discussion
 
 
 - Patients were higher than controls for **exponent** in 3/4 datasets (UNE, TCH, UTU)
 - Patients were higher than controls for **offset** only in 1 dataset (TCH)
+- However, both offset and exponent were significantly higher in patients when datasets were combnined
 - Correlations with cognitive measures were inconsistent and mostly non-significant
 - More collaboration between EEG labs is needed - this data is time-consuming to collect and patients want to know their time is spent usefully
 - What do aperiodic component differences tell us? Noise? General slowing? 
