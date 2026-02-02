@@ -20,6 +20,103 @@ format:
 editor: source
 ---
 
+```{r load packages and data, wrangle data, echo=FALSE}
+#| output: false
+
+library(afex)
+library(emmeans)
+library(readr)
+library(tidyr)
+library(reshape2)
+library(tidyverse)
+library(dplyr)
+library (patchwork)
+library(papaja)
+library(knitr)
+library(ggrain)
+
+## Import data
+
+All_data <- read_csv("data/All_wide_with_Zscores.csv")
+
+UNE_data <- read_csv("data/UNE_wide.csv")
+TCH_data <- read_csv("data/TCH_wide.csv")
+UNM_data <- read_csv("data/UNM_wide_with_MoCA.csv")
+UTU_data <- read_csv("data/UTU_wide_with_MoCA.csv")
+
+UTU_data <- filter(UTU_data, !is.na(EC_Offset)) # Filter out NA values 
+UNE_data <- filter(UNE_data, !is.na(EC_Offset)) # Filter out NA values 
+
+# Recode sex to match values throughout
+TCH_data$Sex <- case_match(TCH_data$Sex, "m" ~ "Male", "f" ~ "Female", .default = TCH_data$Sex)
+UTU_data$Sex <- case_match(UTU_data$Sex, "m" ~ "Male", "f" ~ "Female", .default = UTU_data$Sex)
+UNM_data$Sex <- case_match(UNM_data$Sex, "M" ~ "Male", "F" ~ "Female", .default = UNM_data$Sex)
+
+calculate_z <- function(X, X_mean, S){
+  return((X-X_mean)/S)
+}
+
+UNE_data$EC_Offset_z <- calculate_z(UNE_data$EC_Offset, mean(UNE_data$EC_Offset), sd(UNE_data$EC_Offset))
+
+UNE_data$EO_Offset_z <- calculate_z(UNE_data$EO_Offset, mean(UNE_data$EO_Offset), sd(UNE_data$EO_Offset))
+
+UNE_data$EC_Exponent_z <- calculate_z(UNE_data$EC_Exponent, mean(UNE_data$EC_Exponent), sd(UNE_data$EC_Exponent))
+
+UNE_data$EO_Exponent_z <- calculate_z(UNE_data$EO_Exponent, mean(UNE_data$EO_Exponent,), sd(UNE_data$EO_Exponent))
+
+
+UTU_data$EC_Offset_z <- calculate_z(UTU_data$EC_Offset, mean(UTU_data$EC_Offset), sd(UTU_data$EC_Offset))
+
+UTU_data$EO_Offset_z <- calculate_z(UTU_data$EO_Offset, mean(UTU_data$EO_Offset), sd(UTU_data$EO_Offset))
+
+UTU_data$EC_Exponent_z <- calculate_z(UTU_data$EC_Exponent, mean(UTU_data$EC_Exponent), sd(UTU_data$EC_Exponent))
+
+UTU_data$EO_Exponent_z <- calculate_z(UTU_data$EO_Exponent, mean(UTU_data$EO_Exponent), sd(UTU_data$EO_Exponent))
+
+
+TCH_data$EC_Offset_z <- calculate_z(TCH_data$EC_Offset, mean(TCH_data$EC_Offset), sd(UTU_data$EC_Offset))
+
+TCH_data$EO_Offset_z <- calculate_z(TCH_data$EO_Offset, mean(TCH_data$EO_Offset), sd(TCH_data$EO_Offset))
+
+TCH_data$EC_Exponent_z <- calculate_z(TCH_data$EC_Exponent, mean(TCH_data$EC_Exponent), sd(TCH_data$EC_Exponent))
+
+TCH_data$EO_Exponent_z <- calculate_z(TCH_data$EO_Exponent, mean(TCH_data$EO_Exponent), sd(TCH_data$EO_Exponent))
+
+
+UNM_data$EC_Offset_z <- calculate_z(UNM_data$EC_Offset, mean(UNM_data$EC_Offset), sd(UNM_data$EC_Offset))
+
+UNM_data$EO_Offset_z <- calculate_z(UNM_data$EO_Offset, mean(UNM_data$EO_Offset), sd(UNM_data$EO_Offset))
+
+UNM_data$EC_Exponent_z <- calculate_z(UNM_data$EC_Exponent, mean(UNM_data$EC_Exponent), sd(UNM_data$EC_Exponent))
+
+UNM_data$EO_Exponent_z <- calculate_z(UNM_data$EO_Exponent, mean(UNM_data$EO_Exponent), sd(UNM_data$EO_Exponent))
+
+UNM_data$ID <- as.character(UNM_data$ID)
+UTU_data$ID <- as.character(UTU_data$ID)
+
+allData <- bind_rows(UNE_data, TCH_data, UNM_data, UTU_data)
+
+# Test for differences between eyes. No need to use Z-scored items because this is paired. 
+
+res_eyes_offset<- t.test(allData$EC_Offset, allData$EO_Offset, paired = TRUE)
+
+res_eyes_exponent<- t.test(allData$EC_Exponent, allData$EO_Exponent, paired = TRUE)
+
+Exponent_ANOVA_EC <- aov_ez("ID", "EC_Exponent", allData, 
+                                  between = c("Group"),
+                                 covariate = c("Age"),
+                                 factorize = TRUE,
+                                 anova_table = list(correction = "none", es = "pes"))
+
+Offset_ANOVA_EC <- aov_ez("ID", "EC_Offset", allData, 
+                                  between = c("Group"),
+                                 covariate = c("Age"),
+                                 factorize = TRUE,
+                                 anova_table = list(correction = "none", es = "pes"))
+
+```
+
+
 ## Talk information
 
 -   This talk was written in [Quarto](https://quarto.org/) (R Markdown/R Studio) & is available online
