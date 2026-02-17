@@ -18,4 +18,4 @@ Exponent_ANOVA <- aov_ez("ID", "Exponent", TCH_results_all,
                                  anova_table = list(correction = "none", es = "pes")) 
 
 # Use afex_plot to plot these more simply
-exponentPlot <-  afex_plot(Exponent_ANOVA,  ~ Eye,  ~ Group, error = "between")
+exponentPlot <-  afex_plot(Exponent_ANOVA,  ~ Eye,  ~ Group)
