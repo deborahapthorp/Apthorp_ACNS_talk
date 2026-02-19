@@ -102,13 +102,13 @@ res_eyes_offset<- t.test(allData$EC_Offset, allData$EO_Offset, paired = TRUE)
 
 res_eyes_exponent<- t.test(allData$EC_Exponent, allData$EO_Exponent, paired = TRUE)
 
-Exponent_ANOVA_EC <- aov_ez("ID", "EC_Exponent", allData, 
+Exponent_ANOVA_EC <- aov_ez("ID", "EC_Exponent_z", allData, 
                                   between = c("Group"),
                                  covariate = c("Age"),
                                  factorize = TRUE,
                                  anova_table = list(correction = "none", es = "pes"))
 
-Offset_ANOVA_EC <- aov_ez("ID", "EC_Offset", allData, 
+Offset_ANOVA_EC <- aov_ez("ID", "EC_Offset_z", allData, 
                                   between = c("Group"),
                                  covariate = c("Age"),
                                  factorize = TRUE,
